@@ -21,7 +21,9 @@ export class Login {
 
   public login (){
 
-    this.navCtrl.setRoot(Painel);
+    //verificação das crendenciaisi vão aqui
+
+    this.navCtrl.push(Painel);
 
   }
 
