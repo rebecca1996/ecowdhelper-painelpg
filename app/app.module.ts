@@ -13,6 +13,30 @@ import { TabsPage } from '../pages/tabs/tabs';
 import {Login} from '../pages/login/login';
 
 
+//modulo do firebase
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
+//importação do modulo que vai permitir que relizamos cadastro no banco pelo app
+import {FormsModule} from '@angular/forms';
+
+//Serviços/modulo pro banco funiocnar a auth
+import {AngularFireAuthModule} from '@angular/fire/auth';
+
+
+  // Your web app's Firebase configuration
+  const  config = {
+    apiKey: "AIzaSyA1wcnra0E8uMZVUatS5f3XFf7JZ7gkNTs",
+    authDomain: "ecowdhelper.firebaseapp.com",
+    databaseURL: "https://ecowdhelper.firebaseio.com",
+    projectId: "ecowdhelper",
+    storageBucket: "ecowdhelper.appspot.com",
+    messagingSenderId: "600635077281",
+    appId: "1:600635077281:web:0632e2a6fc14af3b"
+  };
+
+
+
 
 @NgModule({
   declarations: [
@@ -26,7 +50,13 @@ import {Login} from '../pages/login/login';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(config),
+    //dar acesso as classes que vão manipular o fires store
+    AngularFirestoreModule,
+    FormsModule,
+    //modulo de autenticação
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
