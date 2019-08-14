@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 //rebeccca interação
-import {Painel} from '../painel/painel';
+import {HomePage} from '../home/home';
 
 
 
@@ -23,7 +23,7 @@ export class Login {
 
     //verificação das crendenciaisi vão aqui
 
-    this.navCtrl.push(Painel);
+    this.navCtrl.setRoot(HomePage);
 
   }
 

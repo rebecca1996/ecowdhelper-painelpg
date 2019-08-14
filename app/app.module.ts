@@ -11,7 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 //Rebcca Interação
 
 import {Login} from '../pages/login/login';
-import {Painel} from '../pages/painel/painel';
+
 
 
 @NgModule({
@@ -21,8 +21,7 @@ import {Painel} from '../pages/painel/painel';
     ContactPage,
     HomePage,
     TabsPage,
-    Login,
-    Painel
+    Login
 
   ],
   imports: [
@@ -36,8 +35,7 @@ import {Painel} from '../pages/painel/painel';
     ContactPage,
     HomePage,
     TabsPage,
-    Login,
-    Painel
+    Login
  
   ],
   providers: [
