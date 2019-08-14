@@ -1,0 +1,42 @@
+
+
+ 
+<ion-content padding>
+
+      <ion-card>
+        <img src="https://bit.ly/306wIUs" class="logo" text-center/>
+      </ion-card>
+ 
+	<form #form="ngForm" (submit)="login(form)">
+		<ion-list>
+
+			<ion-item>
+				<ion-label floating >Usuário</ion-label>
+				<ion-input name="email"  type="email" ngModel></ion-input>
+			</ion-item>
+
+			<ion-item>
+				<ion-label floating >Senha</ion-label>
+				<ion-input name="senha"  type="password" ngModel></ion-input>
+			</ion-item>
+
+		
+
+
+    <div padding text-center>
+		<button  ion-button  color="primary" click="login()">Entrar</button>
+    </div>
+
+    
+
+    </ion-list>
+
+	</form>
+
+  <div padding text-center>
+     <button><a >Recuperar sua senha</a></button>
+    </div>
+
+</ion-content>
+
+
